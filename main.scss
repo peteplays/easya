@@ -1,0 +1,100 @@
+$blue: #00c6d5;
+$purple: #5c619e;
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 15px;
+}
+
+p {
+  margin-top: 50px;
+  text-align: center;
+  line-height: 28px;
+}
+
+li {
+  font-style: italic;
+}
+
+.image {
+  max-width: 70%;
+  margin: 15px auto;
+}
+
+.source {
+  font-size: 70%;
+}
+
+.title-first {
+  font-family: 'Open Sans', sans-serif;
+  color: $blue;
+  font-weight: 400 !important;
+  font-size: 120%;
+}
+
+.title-second {
+  font-family: 'Tangerine', cursive;
+  color: $purple;
+  font-weight: 400 !important;
+  font-size: 270%;
+}
+
+.first-section {
+  .title-first-lg {
+    @extend .title-first;
+    font-size: 180%;
+  }
+
+  .title-second-lg {
+    @extend .title-second;
+    font-size: 370%;
+  }
+}
+
+.contact-us {
+  ul {
+    li {
+      display: inline-block;
+      vertical-align: top;
+
+      &:not(:last-child) {
+        padding-right: 10px;
+      }
+
+      .fas,
+      .fab {
+        margin-top: 10px;
+        font-size: 200%;
+      }
+
+      .fa-phone-square,
+      .fa-instagram {
+        color: $purple;
+      }
+
+      .fa-envelope-square,
+      .fa-facebook-square {
+        color: $blue;
+      }
+    }
+  }
+}
+
+.powered-by {
+  .subtitle {
+    margin-bottom: 1px;
+  }
+
+  .carelife {
+    margin-top: 1px;
+    word-spacing: -5px;
+
+    .title-first {
+      font-size: 90%;
+    }
+
+    .title-second {
+      font-size: 170%;
+    }
+  }
+}
