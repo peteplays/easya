@@ -3,7 +3,6 @@ $purple: #5c619e;
 
 body {
   font-family: 'Open Sans', sans-serif;
-  margin: 0 15px;
 }
 
 p {
@@ -14,6 +13,10 @@ p {
 
 li {
   font-style: italic;
+}
+
+.container {
+  margin: inherit 15px;
 }
 
 .image {
@@ -37,6 +40,11 @@ li {
   color: $purple;
   font-weight: 400 !important;
   font-size: 270%;
+}
+
+.purple-section {
+  background-color: lighten($color: $purple, $amount: 10);
+  margin-top: 20px;
 }
 
 .first-section {
