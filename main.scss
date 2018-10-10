@@ -16,7 +16,8 @@ li {
 }
 
 .container {
-  margin: inherit 15px;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
 }
 
 .image {
@@ -43,13 +44,14 @@ li {
 }
 
 .purple-section {
-  background-color: lighten($color: $purple, $amount: 10);
+  background-color: lighten($color: $purple, $amount: 31);
   margin-top: 20px;
 }
 
 .blue-section {
-  background-color: lighten($color: $blue, $amount: 10);
+  background-color: lighten($color: $blue, $amount: 40);
   margin: 20px inherit;
+  padding-bottom: 55px;
 }
 
 .blue-btn {
@@ -62,11 +64,14 @@ li {
   }
 }
 
-#consider {
+.mb40 {
+  margin-bottom: 40px;
+}
+
+.list-large-spacing {
   li:not(:last-child) {
     margin-bottom: 40px;
   }
-
 }
 
 .first-section {
@@ -78,6 +83,47 @@ li {
   .title-second-lg {
     @extend .title-second;
     font-size: 370%;
+  }
+}
+
+.big-numbers {
+  div {
+    width: 18%;
+    float: left;
+
+    .the-number {
+      font-family: 'Niramit', sans-serif;
+      font-size: 400%;
+      text-align: center;
+    }
+
+    &:first-child {
+      margin-left: 15%;
+    }
+  }
+}
+
+.boxes {
+  margin-top: 15px;
+  div {
+    border-radius: 4px;
+    padding: 10px;
+    float: left;
+    width: 30%;
+    border: 1px solid lighten($color: $blue, $amount: 40);
+
+    &:first-child {
+      margin-left: 20%;
+    }
+
+    &:hover {
+      cursor: pointer;
+      border: 1px solid darken($color: $blue, $amount: 5);
+    }
+
+    i {
+      font-size: 450%;
+    }
   }
 }
 
@@ -106,6 +152,16 @@ li {
       .fa-facebook-square {
         color: $blue;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .big-numbers {
+    div {
+      width: 100%;
+      float: none;
+      margin: 0 auto !important;
     }
   }
 }
