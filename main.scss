@@ -63,7 +63,10 @@ li {
 }
 
 #consider {
-  line-height: 6x;
+  li:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
 }
 
 .first-section {
