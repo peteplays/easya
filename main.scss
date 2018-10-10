@@ -47,6 +47,25 @@ li {
   margin-top: 20px;
 }
 
+.blue-section {
+  background-color: lighten($color: $blue, $amount: 10);
+  margin: 20px inherit;
+}
+
+.blue-btn {
+  background-color: $blue;
+  color: #ffffff;
+  border: 1px solid darken($color: $blue, $amount: 10);
+
+  &:hover {
+    color: #eeeeee;
+  }
+}
+
+#consider {
+  line-height: 6x;
+}
+
 .first-section {
   .title-first-lg {
     @extend .title-first;
@@ -84,25 +103,6 @@ li {
       .fa-facebook-square {
         color: $blue;
       }
-    }
-  }
-}
-
-.powered-by {
-  .subtitle {
-    margin-bottom: 1px;
-  }
-
-  .carelife {
-    margin-top: 1px;
-    word-spacing: -5px;
-
-    .title-first {
-      font-size: 90%;
-    }
-
-    .title-second {
-      font-size: 170%;
     }
   }
 }
