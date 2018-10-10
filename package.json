@@ -1,10 +1,11 @@
 {
-  "name": "jam2",
+  "name": "easya",
   "version": "1.0.0",
   "description": "easyAesthetics",
   "main": "index.js",
   "scripts": {
-    "start": "parcel build index.html",
+    "start": "node server.js",
+    "heroku-postbuild": "parcel build index.html",
     "dev": "parcel index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,6 +20,7 @@
   "dependencies": {
     "@vizuaalog/bulmajs": "^0.6.0",
     "bulma": "^0.7.1",
+    "express": "^4.16.3",
     "parcel-bundler": "^1.10.2",
     "sass": "^1.14.1"
   }
