@@ -1,5 +1,6 @@
 $blue: #00c6d5;
 $purple: #5c619e;
+$navBarHeight: 60px;
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -74,7 +75,22 @@ li {
   }
 }
 
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $navBarHeight;
+  transition: transform 1s ease-out;
+}
+
+.navbar.is-hidden {
+  transform: translateY(-100%);
+}
+
 .first-section {
+  margin-top: $navBarHeight + 10;
+
   .title-first-lg {
     @extend .title-first;
     font-size: 180%;
