@@ -31,17 +31,11 @@ li {
 }
 
 .title-first {
-  font-family: 'Open Sans', sans-serif;
-  color: $blue;
-  font-weight: 400 !important;
-  font-size: 120%;
+  font-weight: 700;
 }
 
 .title-second {
-  font-family: 'Tangerine', cursive;
-  color: $purple;
-  font-weight: 400 !important;
-  font-size: 270%;
+  font-style: italic;
 }
 
 .purple-section {
@@ -90,6 +84,20 @@ li {
 
 .first-section {
   margin-top: $navBarHeight + 10;
+
+  .title-first {
+    font-family: 'Open Sans', sans-serif;
+    color: $blue;
+    font-weight: 400 !important;
+    font-size: 120%;
+  }
+
+  .title-second {
+    font-family: 'Tangerine', cursive;
+    color: $purple;
+    font-weight: 400 !important;
+    font-size: 270%;
+  }
 
   .title-first-lg {
     @extend .title-first;
