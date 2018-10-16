@@ -6,6 +6,7 @@ $(function () {
   const mainHeader = $('.navbar');
   // const fadeOutBar = $('#fadeOutBar');
 
+  let headerHeight = 60;
   let scrolling = false;
   let previousTop = 0;
   let scrollDelta = 10;

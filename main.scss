@@ -52,10 +52,12 @@ li {
 .blue-btn {
   background-color: $blue;
   color: #ffffff;
-  border: 1px solid darken($color: $blue, $amount: 10);
+  font-weight: 600;
+  border: 1px solid darken($color: $blue, $amount: 5);
 
   &:hover {
-    color: #eeeeee;
+    color: darken($color: $blue, $amount: 20);
+    border: 1px solid darken($color: $blue, $amount: 20);
   }
 }
 
@@ -187,5 +189,39 @@ li {
       float: none;
       margin: 0 auto !important;
     }
+  }
+}
+
+// partnerships
+.form-container {
+  margin-top: 35px;
+  max-width: 40%;
+
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+  .submit {
+    .control {
+      text-align: center;
+
+      input {
+        text-align: center;
+      }
+
+      .button {
+        @extend .blue-btn;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .form-container {
+    max-width: 100%;
   }
 }
