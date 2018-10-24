@@ -10,9 +10,12 @@ nav {
   .navbar-start {
     margin: 0 auto;
     padding-top: 10px;
+    a {
+      font-weight: 700;
 
-    a:not(:last-child) {
-      margin-right: 60px;
+      &:not(:last-child) {
+        margin-right: 60px;
+      }
     }
   }
 }
@@ -34,7 +37,7 @@ li {
 
 .image {
   max-width: 70%;
-  margin: 15px auto;
+  margin: 35px auto;
 }
 
 .source {
@@ -77,6 +80,14 @@ li {
 }
 
 .list-large-spacing {
+  li:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+.list-large-spacing-left {
+  margin-left: 25%;
+
   li:not(:last-child) {
     margin-bottom: 40px;
   }
@@ -125,11 +136,21 @@ li {
       font-size: 550%;
     }
   }
+
+  .title-shorting-top-margin {
+    margin-top: 150px !important;
+  }
+}
+
+.unique-service {
+  margin: 100px auto;
+  // text-align: justify;
 }
 
 .big-numbers {
   div {
-    width: 18%;
+    // width: 18%;
+    width: 20%;
     float: left;
 
     .the-number {
@@ -139,14 +160,15 @@ li {
     }
 
     &:first-child {
-      margin-left: 15%;
+      margin-left: 11%;
     }
   }
 }
 
 .boxes {
   margin-top: 15px;
-  div {
+  a {
+    color: #333333;
     border-radius: 4px;
     padding: 10px;
     float: left;
@@ -195,21 +217,35 @@ footer {
         margin-top: 10px;
         font-size: 200%;
       }
-
-      .fa-phone-square,
-      .fa-instagram {
-        color: $purple;
-      }
-
-      .fa-envelope-square,
-      .fa-facebook-square {
-        color: $blue;
-      }
     }
   }
 }
 
+.fa-phone-square,
+.fa-instagram {
+  color: $purple;
+}
+
+.fa-envelope-square,
+.fa-facebook-square {
+  color: $blue;
+}
+
 @media only screen and (max-width: 800px) {
+  .list-large-spacing-left {
+    margin: auto;
+  }
+
+  .boxes {
+    a {
+      width: 45%;
+
+      &:first-child {
+        margin-left: 5%;
+      }
+    }
+  }
+
   .big-numbers {
     div {
       width: 100%;
