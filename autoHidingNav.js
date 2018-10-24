@@ -6,7 +6,6 @@ $(function () {
   const mainHeader = $('.navbar');
   // const fadeOutBar = $('#fadeOutBar');
 
-  let headerHeight = 60;
   let scrolling = false;
   let previousTop = 0;
   let scrollDelta = 10;
@@ -26,7 +25,7 @@ $(function () {
   });
 
   $(window).change('resize', () => {
-    headerHeight = mainHeader.height();
+    headerHeight = mainHeader.height() || 60;
   });
 
   function autoHideHeader() {

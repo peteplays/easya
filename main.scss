@@ -6,6 +6,17 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+nav {
+  .navbar-start {
+    margin: 0 auto;
+    padding-top: 10px;
+
+    a:not(:last-child) {
+      margin-right: 60px;
+    }
+  }
+}
+
 p {
   margin-top: 50px;
   text-align: center;
@@ -101,14 +112,18 @@ li {
     font-size: 270%;
   }
 
-  .title-first-lg {
-    @extend .title-first;
-    font-size: 180%;
-  }
+  .is-hidden-mobile {
+    margin-top: 260px;
 
-  .title-second-lg {
-    @extend .title-second;
-    font-size: 370%;
+    .title-first-lg {
+      @extend .title-first;
+      font-size: 220%;
+    }
+
+    .title-second-lg {
+      @extend .title-second;
+      font-size: 550%;
+    }
   }
 }
 
@@ -153,7 +168,19 @@ li {
   }
 }
 
-.contact-us {
+footer {
+  .book-meeting {
+    margin: 100px auto;
+    display: block;
+  }
+
+  .subtitle {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 75%;
+  }
+
   ul {
     li {
       display: inline-block;
@@ -223,5 +250,26 @@ li {
 @media only screen and (max-width: 800px) {
   .form-container {
     max-width: 100%;
+  }
+}
+
+// about
+.about-big-title {
+  margin: 100px auto;
+
+  .title-first {
+    font-family: 'Open Sans', sans-serif;
+    color: $blue;
+    font-weight: 400 !important;
+    font-size: 120%;
+  }
+
+  .title-second {
+    font-family: 'Tangerine', cursive;
+    color: $purple;
+    font-weight: 400 !important;
+    font-size: 270%;
+
+    margin-right: 30px;
   }
 }
