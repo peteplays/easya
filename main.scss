@@ -1,4 +1,5 @@
 $blue: #00c6d5;
+$skyBlue: #8fc8d5;
 $purple: #5c619e;
 $navBarHeight: 60px;
 
@@ -62,7 +63,7 @@ li {
 }
 
 .blue-section {
-  background-color: $blue;
+  background-color: $skyBlue;
   margin: 20px inherit;
   padding-bottom: 55px;
 }
@@ -181,7 +182,7 @@ li {
     padding: 20px;
     float: left;
     width: 30%;
-    border: 1px solid $blue;
+    border: 1px solid $skyBlue;
 
     &:first-child {
       margin-left: 19%;
@@ -189,7 +190,7 @@ li {
 
     &:hover {
       cursor: pointer;
-      border: 1px solid darken($color: $blue, $amount: 5);
+      border: 1px solid darken($color: $skyBlue, $amount: 10);
     }
 
     i {
@@ -269,7 +270,7 @@ footer {
   }
 }
 
-// partnerships
+// contact
 .form-container {
   margin-top: 35px;
   max-width: 40%;
@@ -298,16 +299,17 @@ footer {
 }
 
 .contact-info {
-  margin-top: 30px;
-  margin-left: 26%;
+  margin-top: 50px;
 
   li {
-    float: left;
-
     &:not(:last-child) {
-      margin-right: 45px;
+      margin-bottom: 25px;
     }
   }
+}
+
+.contact-us {
+  margin-top: 80px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -316,13 +318,8 @@ footer {
   }
 
   .contact-info {
-    margin: 30px auto;
+    margin: 50px auto;
     text-align: center;
-
-    li {
-      float: none;
-      margin-bottom: 12px;
-    }
   }
 }
 
