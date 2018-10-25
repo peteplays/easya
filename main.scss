@@ -53,12 +53,16 @@ li {
 }
 
 .purple-section {
-  background-color: lighten($color: $purple, $amount: 31);
+  background-color: $purple;
   margin-top: 20px;
+
+  li {
+    color: #ffffff;
+  }
 }
 
 .blue-section {
-  background-color: lighten($color: $blue, $amount: 40);
+  background-color: $blue;
   margin: 20px inherit;
   padding-bottom: 55px;
 }
@@ -147,6 +151,10 @@ li {
   // text-align: justify;
 }
 
+.source {
+  color: #333333;
+}
+
 .big-numbers {
   div {
     // width: 18%;
@@ -170,13 +178,13 @@ li {
   a {
     color: #333333;
     border-radius: 4px;
-    padding: 10px;
+    padding: 20px;
     float: left;
     width: 30%;
-    border: 1px solid lighten($color: $blue, $amount: 40);
+    border: 1px solid $blue;
 
     &:first-child {
-      margin-left: 20%;
+      margin-left: 19%;
     }
 
     &:hover {
@@ -255,6 +263,12 @@ footer {
   }
 }
 
+@media only screen and (min-width: 801px) {
+  section {
+    // width: 960px;
+  }
+}
+
 // partnerships
 .form-container {
   margin-top: 35px;
@@ -283,9 +297,32 @@ footer {
   }
 }
 
+.contact-info {
+  margin-top: 30px;
+  margin-left: 26%;
+
+  li {
+    float: left;
+
+    &:not(:last-child) {
+      margin-right: 45px;
+    }
+  }
+}
+
 @media only screen and (max-width: 800px) {
   .form-container {
     max-width: 100%;
+  }
+
+  .contact-info {
+    margin: 30px auto;
+    text-align: center;
+
+    li {
+      float: none;
+      margin-bottom: 12px;
+    }
   }
 }
 
@@ -307,5 +344,9 @@ footer {
     font-size: 270%;
 
     margin-right: 30px;
+  }
+
+  .is-size-6 {
+    margin-top: 0;
   }
 }
