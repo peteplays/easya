@@ -2,6 +2,7 @@ $blue: #00c6d5;
 $skyBlue: #8fc8d5;
 $purple: #5c619e;
 $navBarHeight: 60px;
+$white: #ffffff;
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -36,6 +37,11 @@ li {
   padding-right: 15px !important;
 }
 
+.smaller-width-container {
+  padding-left: 15% !important;
+  padding-right: 15% !important;
+}
+
 .image {
   max-width: 70%;
   margin: 35px auto;
@@ -51,6 +57,10 @@ li {
 
 .title-second {
   font-style: italic;
+}
+
+.font-white {
+  color: $white;
 }
 
 .purple-section {
@@ -105,6 +115,10 @@ li {
   width: 100%;
   height: $navBarHeight;
   transition: transform 1s ease-out;
+
+  .navbar-start a:not(:last-child) {
+    margin-right: 107px;
+  }
 }
 
 .navbar.is-hidden {
@@ -156,11 +170,27 @@ li {
   color: #333333;
 }
 
+.very-lucrative {
+  p {
+    color: $white;
+
+    &:first-child {
+      margin-top: 5px;
+    }
+  }
+
+  .list-large-spacing-left {
+    margin-left: 39%;
+  }
+}
+
 .big-numbers {
+  @extend .font-white;
+
   div {
-    // width: 18%;
     width: 20%;
     float: left;
+    margin-bottom: 40px;
 
     .the-number {
       font-family: 'Niramit', sans-serif;
@@ -182,7 +212,7 @@ li {
     padding: 20px;
     float: left;
     width: 30%;
-    border: 1px solid $skyBlue;
+    border: 1px solid $white;
 
     &:first-child {
       margin-left: 19%;
@@ -199,18 +229,12 @@ li {
   }
 }
 
-footer {
-  .book-meeting {
-    margin: 100px auto;
-    display: block;
-  }
+.book-meeting {
+  margin: 100px auto;
+}
 
-  .subtitle {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 75%;
-  }
+footer {
+  background-color: $purple;
 
   ul {
     li {
@@ -228,21 +252,26 @@ footer {
       }
     }
   }
-}
 
-.fa-phone-square,
-.fa-instagram {
-  color: $purple;
-}
+  .fa-phone-square,
+  .fa-instagram,
+  .fa-envelope-square,
+  .fa-facebook-square {
+    color: $white;
+  }
 
-.fa-envelope-square,
-.fa-facebook-square {
-  color: $blue;
+  .subtitle {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 75%;
+    color: $white;
+  }
 }
 
 @media only screen and (max-width: 800px) {
   .list-large-spacing-left {
-    margin: auto;
+    margin: auto !important;
   }
 
   .boxes {
@@ -259,7 +288,7 @@ footer {
     div {
       width: 100%;
       float: none;
-      margin: 0 auto !important;
+      margin: 0 auto 40px !important;
     }
   }
 }
@@ -301,9 +330,13 @@ footer {
 .contact-info {
   margin-top: 50px;
 
+  a {
+    color: #333333;
+  }
+
   li {
     &:not(:last-child) {
-      margin-bottom: 25px;
+      margin-bottom: 15px;
     }
   }
 }
@@ -331,16 +364,14 @@ footer {
     font-family: 'Open Sans', sans-serif;
     color: $blue;
     font-weight: 400 !important;
-    font-size: 120%;
+    font-size: 190%;
   }
 
   .title-second {
     font-family: 'Tangerine', cursive;
     color: $purple;
     font-weight: 400 !important;
-    font-size: 270%;
-
-    margin-right: 30px;
+    font-size: 435%;
   }
 
   .is-size-6 {
