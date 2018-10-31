@@ -26,6 +26,11 @@ p {
   margin-top: 50px;
   text-align: center;
   line-height: 28px;
+  color: $white;
+
+  strong {
+    color: $white;
+  }
 }
 
 li {
@@ -66,6 +71,8 @@ li {
 .purple-section {
   background-color: $purple;
   margin-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
   li {
     color: #ffffff;
@@ -88,6 +95,11 @@ li {
     color: darken($color: $blue, $amount: 20);
     border: 1px solid darken($color: $blue, $amount: 20);
   }
+}
+
+.mtb70 {
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 
 .mb40 {
@@ -162,8 +174,7 @@ li {
 }
 
 .unique-service {
-  margin: 100px auto;
-  // text-align: justify;
+  margin: 130px auto;
 }
 
 .source {
@@ -338,6 +349,10 @@ footer {
     &:not(:last-child) {
       margin-bottom: 15px;
     }
+  }
+
+  .address {
+    // text-align: left
   }
 }
 
