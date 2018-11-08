@@ -239,46 +239,9 @@ li {
   margin-top: 100px;
 }
 
-
 .book-meeting {
   margin: 140px auto;
 }
-
-// footer {
-//   background-color: $purple;
-
-//   ul {
-//     li {
-//       display: inline-block;
-//       vertical-align: top;
-
-//       &:not(:last-child) {
-//         padding-right: 10px;
-//       }
-
-//       .fas,
-//       .fab {
-//         margin-top: 10px;
-//         font-size: 200%;
-//       }
-//     }
-//   }
-
-//   .fa-phone-square,
-//   .fa-instagram,
-//   .fa-envelope-square,
-//   .fa-facebook-square {
-//     color: $white;
-//   }
-
-//   .subtitle {
-//     margin-top: 10px;
-//     padding-bottom: 10px;
-//     font-weight: 700;
-//     font-size: 75%;
-//     color: $white;
-//   }
-// }
 
 footer {
   background-color: $purple;
@@ -295,10 +258,8 @@ footer {
 
   ul {
      flex-direction: column;
-    // padding-left: 25%;
-    // padding-right: 25%;
 
-    li {
+     li {
       display: inline-block;
       vertical-align: middle;
       width: 32%;
@@ -311,10 +272,6 @@ footer {
       display: inline-block;
       vertical-align: top;
       width: 19%;
-
-      // &:not(:last-child) {
-      //   padding-right: 10px !important;
-      // }
 
       .fas,
       .fab {
@@ -364,7 +321,7 @@ footer {
   }
 
   footer {
-    padding: 10px 20px;
+    padding: 30px 20px 5px;
 
     & > ul {
       display: flex;
@@ -400,16 +357,8 @@ footer {
         order: 1;
       }
     }
-
-
   }
 }
-
-// @media only screen and (min-width: 801px) {
-//   section {
-//     // width: 960px;
-//   }
-// }
 
 // contact
 .form-container {
@@ -450,10 +399,6 @@ footer {
     &:not(:last-child) {
       margin-bottom: 15px;
     }
-  }
-
-  .address {
-    // text-align: left
   }
 }
 
