@@ -263,6 +263,10 @@ footer {
       display: inline-block;
       vertical-align: middle;
       width: 32%;
+
+      &:last-child {
+        width: 33%;
+      }
     }
   }
 
@@ -357,6 +361,18 @@ footer {
         order: 1;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 1216px) {
+  footer {
+    padding: 40px 20% !important;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  footer {
+    padding: 40px 14% !important;
   }
 }
 
